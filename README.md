@@ -6,21 +6,9 @@
 **WIP** 🌱 *Please call back soon...*
 
 ```python
-chart1 = Chart(
-    data={},
-    type="bar",
-)
+from quantdash import QuantDash
 
-card1 = Card(
-    title="Chart #1",
-    chart=chart1,
-)
-
-page1 = Page(
-    route="/",
-    cards=[card1]
-)
-
-qd = QuantDash(pages=[page1])
-qd.run()
+if __name__ == "__main__":
+    qd = QuantDash()
+    qd.run()
 ```
