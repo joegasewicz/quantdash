@@ -10,5 +10,5 @@ class QuantDash:
         self.server = Server()
 
     def run(self):
-        logger.info(f"Starting server on {self.server.port}")
+        logger.info(f"Starting server on http://localhost:{self.server.port}")
         self.server.run()

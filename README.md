@@ -11,3 +11,9 @@ from quantdash import QuantDash
 qd = QuantDash()
 qd.run()
 ```
+
+## API Endpoints
+
+| Method | Path      | Description       | Response Example |
+|--------|-----------|-------------------|------------------|
+| GET    | `/health` | Health check with version | `{ "status": "OK", "version": "0.0" }` |

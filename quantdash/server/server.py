@@ -1,6 +1,8 @@
 import asyncio
 import tornado
 
+from quantdash.routes import HealthHandler
+
 
 class Server:
 
@@ -14,7 +16,7 @@ class Server:
 
     def _create_app(self) -> tornado.web.Application:
         return tornado.web.Application([
-
+            (r"/health", HealthHandler),
         ])
 
     async def create(self):
