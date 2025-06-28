@@ -4,3 +4,11 @@
 **QuantDash** is a lightweight Python framework for building real-time, data-driven dashboards for traders, analysts, and financial engineers.
 
 **WIP** 🌱 *Please call back soon...*
+
+```python
+from quantdash import QuantDash
+
+if __name__ == "__main__":
+    qd = QuantDash()
+    qd.run()
+```
